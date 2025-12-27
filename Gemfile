@@ -38,7 +38,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
   # RSpec for rails 7.1 https://github.com/rspec/rspec-rails/tree/7-1-maintenance
-  gem 'rspec-rails', '~> 7.1.1'
+  gem 'rspec-rails', '~> 8.0.2'
 end
 
 
