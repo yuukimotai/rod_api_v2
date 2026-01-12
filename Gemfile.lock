@@ -299,7 +299,7 @@ GEM
       sequel (~> 5.38)
     stringio (3.2.0)
     thor (1.4.0)
-    tilt (2.6.1)
+    tilt (2.7.0)
     timeout (0.6.0)
     tsort (0.2.0)
     tzinfo (2.0.6)
@@ -339,7 +339,7 @@ DEPENDENCIES
   rspec-rails (~> 7.1.1)
   rubocop-rails-omakase
   sequel-activerecord_connection (~> 2.0)
-  tilt (~> 2.4)
+  tilt (~> 2.7)
   tzinfo-data
 
 BUNDLED WITH
