@@ -9,7 +9,7 @@ default: &default
   encoding: utf8
   database: ignidea
   pool: 5
-  username: motaiyuuki
+  username: yuuki
   password: 123456
   host: localhost
 

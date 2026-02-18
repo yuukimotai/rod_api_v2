@@ -13,11 +13,12 @@ WORKDIR /rails
 
 # Install base packages
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 && \
+    apt-get install --no-install-recommends -y curl libjemalloc2 libvips && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
-
+RUN apt-get update -qq && \
+    apt-get install -y build-essential libpq-dev libyaml-dev
 # Set production environment
-ENV RAILS_ENV="production" \
+ENV RAILS_ENV="development" \
     BUNDLE_DEPLOYMENT="1" \
     BUNDLE_PATH="/usr/local/bundle" \
     BUNDLE_WITHOUT="development"
@@ -46,7 +47,7 @@ RUN bundle exec bootsnap precompile app/ lib/
 
 
 # Final stage for app image
-FROM base
+FROM base AS final
 
 # Copy built artifacts: gems, application
 COPY --from=build "${BUNDLE_PATH}" "${BUNDLE_PATH}"

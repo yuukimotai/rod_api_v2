@@ -1,5 +1,9 @@
-require 'rails_helper'
+require "spec_helper"
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe String do
+  example "文字列の長さ" do
+    s = "ABCD"
+    expect(s.size).to eq(4)
+  end
 end
+
