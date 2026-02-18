@@ -10,7 +10,7 @@ default: &default
   database: ignidea
   pool: 5
   username: yuuki
-  password: 123456
+  password: 273393
   host: localhost
 
 development:

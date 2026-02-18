@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.2.2", ">= 7.2.2.2"
+gem "rails", "7.1"
 gem "pg"
 gem 'psych', '~> 5.3', '>= 5.3.1'
 # Use the Puma web server [https://github.com/puma/puma]
@@ -39,6 +39,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
   # RSpec for rails 7.1 https://github.com/rspec/rspec-rails/tree/7-1-maintenance
+  gem "after_commit_everywhere"
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 7.1.1'
 end

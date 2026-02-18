@@ -1,9 +1,8 @@
-require "spec_helper"
+require 'rails_helper'
 
-describe String do
-  example "文字列の長さ" do
-    s = "ABCD"
-    expect(s.size).to eq(4)
+RSpec.describe User, type: :model do
+  it "is valid with email, password and password_confirmation" do
+    user = User.create!(email: "user@example.com", password: "secret123")
+    expect(user).to be_valid
   end
 end
-
