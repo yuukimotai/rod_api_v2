@@ -40,7 +40,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   # RSpec for rails 7.1 https://github.com/rspec/rspec-rails/tree/7-1-maintenance
   gem 'factory_bot_rails'
-  gem 'rspec-rails', '~> 7.1.1'
+  gem 'rspec-rails', '~> 8.0.3'
 end
 
 
